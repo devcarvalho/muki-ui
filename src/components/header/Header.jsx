@@ -3,9 +3,6 @@ import React from "react";
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import { styled } from "@mui/system";
-
-import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { Box, IconButton, Menu, MenuItem, Tooltip, Typography } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
@@ -23,22 +20,18 @@ function Header() {
 
   const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-  const StyledLogo = styled(Logo)`
-    height: 30px;
-    path, line, circle {
-      stroke: #97ABB1;
-    }
-  `;
-
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#fff", boxShadow: "none" }}>
-      <Container maxWidth="xl">
+    <AppBar position="static" sx={{ backgroundColor: "#fff", boxShadow: "none", paddingTop: "50px" }}>
+      <Container maxWidth="xl" sx={{ padding: "0 24px", marginBottom: "30px" }}>
         <Toolbar disableGutters>
-          <StyledLogo />
+          <div>
+            <Typography variant="subtitle1" sx={{ opacity: "0.7" }}>Bem vindo de volta,</Typography>
+            <Typography variant="subtitle2">Filipe Carvalho</Typography>
+          </div>
           <Box sx={{ flexGrow: 0, marginLeft: "auto" }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <AccountCircleIcon color="secondary"/>
+                <AccountCircleIcon color="secondary" sx={{ height: "40px", width: "40px" }}/>
               </IconButton>
             </Tooltip>
             <Menu
