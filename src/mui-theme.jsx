@@ -88,7 +88,22 @@ export const theme = createTheme( {
                     background: "linear-gradient(180deg, #44BBFE 0%, #1E78FE 100%)",
                 }
             }
-        }
+        },
+		MuiOutlinedInput: {
+			styleOverrides: {
+				root: {
+                    border: "1px solid #EBEBEB",
+					borderRadius: "30px",
+					fontFamily: "Urbanist, sans-serif",
+					color: "#0D1636",
+					fontSize: "14px",
+					fontWeight: 500,
+					fontStyle: "normal",
+					lineHeight: "120%",
+					opacity: "0.7",
+                },
+			}
+		}, 
     }
 } );
 
