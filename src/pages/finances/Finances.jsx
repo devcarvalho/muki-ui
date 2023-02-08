@@ -4,9 +4,8 @@ import { styled } from "@mui/system";
 
 import Calendar from "./calendar/Calendar";
 import Dashboard from "./dashboard/Dashboard";
-import Settings from "./settings/Settings";
+import Outings from "./outings/Outings";
 import Navigation from "../../components/navigation/Navigation";
-import Header from "../../components/header/Header";
 
 function Finances() {
   const Content = styled("div")`
@@ -14,11 +13,10 @@ function Finances() {
   `;
   return (
     <Content>
-      <Header/>
       <Routes>
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/home" element={<Dashboard />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/outings" element={<Outings />} />
       </Routes>
       <Navigation />
     </Content>
