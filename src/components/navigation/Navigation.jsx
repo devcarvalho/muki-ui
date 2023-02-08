@@ -24,7 +24,7 @@ function Navigation() {
     sx={{backgroundColor: "#fff", height: "88px"}}
   >
     <BottomNavigationAction value="home" onClick={() => navigate("home")} icon={<Home />} sx={{backgroundColor: "#fff"}} />
-    <BottomNavigationAction value="card" onClick={() => navigate("settings")} icon={<CreditCard />} sx={{backgroundColor: "#fff"}} />
+    <BottomNavigationAction value="card" onClick={() => navigate("outings")} icon={<CreditCard />} sx={{backgroundColor: "#fff"}} />
     <BottomNavigationAction value="plus" onClick={() => navigate("settings")} icon={<PlusCircle />} sx={{backgroundColor: "#fff"}} />
     <BottomNavigationAction value="calendar" onClick={() => navigate("calendar")} icon={<PieChart />} sx={{backgroundColor: "#fff"}} />
     <BottomNavigationAction value="settings" onClick={() => navigate("settings")} icon={<Database />} sx={{backgroundColor: "#fff"}} />

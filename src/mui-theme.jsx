@@ -72,6 +72,12 @@ export const theme = createTheme( {
 			fontSize: "12px",
 			fontWeight: 400,
 		},
+		body3: {
+			fontFamily: "Urbanist, sans-serif",
+			color: "#243748",
+			fontSize: "16px",
+			fontWeight: 700,
+		},
 	},
     components: {
         MuiButton: {

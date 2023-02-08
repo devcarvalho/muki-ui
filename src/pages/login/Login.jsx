@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Button, Container, TextField, Link, Typography } from "@mui/material";
+import { Box, Button, Container, Link, Typography } from "@mui/material";
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { styled } from "@mui/system";
 import { useNavigate } from "react-router-dom";
-import FormControl, { useFormControl } from '@mui/material/FormControl';
+import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 
 function Login() {
@@ -15,8 +15,6 @@ function Login() {
       stroke: #76B561;
     }
   `;
-
-  const { focused } = useFormControl() || {};
 
   return (
     <Container
