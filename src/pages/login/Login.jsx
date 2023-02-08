@@ -51,9 +51,14 @@ function Login() {
         <FormControl>
         <OutlinedInput placeholder="Senha" type="password" />
         </FormControl>
-        <Button onClick={() => navigate("/finances/dashboard")} variant="contained" sx={{marginTop: "15px"}}>Entrar</Button>
-        <Link onClick={() => navigate("/password-recovery")}>Esqueceu a senha?</Link>
-        <Link onClick={() => navigate("/user-register")}>Cadastrar-me</Link>
+        <Link onClick={() => navigate("/password-recovery")} sx={{textAlign: "end", fontSize: "14px", marginTop: "8px", fontWeight: "500"}}>Esqueceu a senha?</Link>
+        <Button onClick={() => navigate("/finances/home")} variant="contained" sx={{marginTop: "15px"}}>Login</Button>
+        <div style={{fontSize:"14px", position: "absolute", top: "758px", left: "74px", fontWeight: "500"}}>
+          <span>
+            Não tem uma conta?
+          </span>
+          <Link onClick={() => navigate("/user-register")} sx={{color: "#44BBFE"}}> Cadastrar-me</Link>
+        </div>
       </Box>
     </Container>
   );

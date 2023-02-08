@@ -104,6 +104,14 @@ export const theme = createTheme( {
                 },
 			}
 		}, 
+		MuiLink: {
+			styleOverrides: {
+				root: {
+					textDecoration: "none",
+					color: "#0D1636",
+				}
+			}
+		}
     }
 } );
 
