@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import React from "react";
 import { styled } from "@mui/system";
 
-import Calendar from "./calendar/Calendar";
+import Bills from "./bills/Bills";
 import Dashboard from "./dashboard/Dashboard";
 import Outings from "./outings/Outings";
 import Navigation from "../../components/navigation/Navigation";
@@ -16,7 +16,7 @@ function Finances() {
   return (
     <Content>
       <Routes>
-        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/bills" element={<Bills />} />
         <Route path="/home" element={<Dashboard />} />
         <Route path="/outings" element={<Outings />} />
         <Route path="/planning" element={<Planning />} />
