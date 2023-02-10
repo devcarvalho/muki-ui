@@ -293,7 +293,7 @@ function Planning() {
                         id="date"
                         type="date"
                         defaultValue="2017-05-24"
-                        sx={{ width: 130, marginTop:"12px" }}
+                        sx={{ marginTop:"12px" }}
                         InputLabelProps={{
                         shrink: true,
                         }}
