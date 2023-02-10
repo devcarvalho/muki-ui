@@ -107,6 +107,7 @@ export const theme = createTheme( {
 					fontStyle: "normal",
 					lineHeight: "120%",
 					opacity: "0.7",
+					background: "#F7F7F7",
                 },
 			}
 		}, 
@@ -116,6 +117,14 @@ export const theme = createTheme( {
 					textDecoration: "none",
 					color: "#0D1636",
 				}
+			}
+		},
+		MuiFormControlLabel: {
+			styleOverrides: {
+				root: {
+					marginLeft: "0px",
+					marginRight: "0px"
+				},
 			}
 		}
     }
