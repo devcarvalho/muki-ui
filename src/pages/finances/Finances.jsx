@@ -8,6 +8,8 @@ import Outings from "./outings/Outings";
 import Navigation from "../../components/navigation/Navigation";
 import Planning from "./planning/Planning";
 import AddOutings from "./outings/AddOutings";
+import ToBuy from "./buy/ToBuy";
+import AddItemToBuy from "./buy/AddItemToBuy";
 
 function Finances() {
   const Content = styled("div")`
@@ -21,6 +23,8 @@ function Finances() {
         <Route path="/outings" element={<Outings />} />
         <Route path="/planning" element={<Planning />} />
         <Route path="/addOutings" element={<AddOutings />} />
+        <Route path="/toBuy" element={<ToBuy />} />
+        <Route path="/addItemToBuy" element={<AddItemToBuy />} />
       </Routes>
       <Navigation />
     </Content>

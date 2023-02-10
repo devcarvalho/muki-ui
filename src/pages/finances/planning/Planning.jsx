@@ -227,7 +227,7 @@ function Planning() {
                 control={<StyledSwitch defaultChecked />}
                 label="Aplicar para todos os meses"
                 />
-                <Button id="btnSaveCeiling" variant="contained" sx={{marginTop: "32px", width:"100%"}}>Salvar</Button>
+                <Button id="btnSaveCeiling" variant="contained" sx={{width:"100%", marginTop:"32px", marginBottom: "140px"}}>Salvar</Button>
             </Wrapper>
             }
         
@@ -256,7 +256,7 @@ function Planning() {
                     >
                         <MenuItem value={0}> Essenciais </MenuItem>
                         <MenuItem value={1}> Lazer </MenuItem>
-                        <MenuItem value={1}> Alimentação </MenuItem>
+                        <MenuItem value={2}> Alimentação </MenuItem>
                     </Select>  
                     </FormControl>
                 </Category>
@@ -282,7 +282,7 @@ function Planning() {
                     >
                         <MenuItem value={0}> A cada 7 dias </MenuItem>
                         <MenuItem value={1}> A cada 15 dias </MenuItem>
-                        <MenuItem value={1}> A cada 1 mês </MenuItem>
+                        <MenuItem value={2}> A cada 1 mês </MenuItem>
                     </Select>  
                     </FormControl>
                 </Repeats>

@@ -5,6 +5,7 @@ import Popper from '@mui/material/Popper';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 
 import { ReactComponent as CreditCard } from '../../assets/icons/credit-card.svg';
 import { ReactComponent as Database } from '../../assets/icons/database.svg';
@@ -37,13 +38,15 @@ function Navigation() {
         <BottomNavigationAction value="card" onClick={() => navigate("outings")} icon={<CreditCard />} sx={{ backgroundColor: "#fff" }} />
         <BottomNavigationAction value="plus" aria-describedby={id} onClick={handlePlusClick} icon={<PlusCircle />} sx={{ backgroundColor: "#fff" }} />
         <BottomNavigationAction value="bills" onClick={() => navigate("bills")} icon={<Database />} sx={{ backgroundColor: "#fff" }} />
-        <BottomNavigationAction value="calendar" onClick={() => navigate("calendar")} icon={<PieChart />} sx={{ backgroundColor: "#fff" }} />
+        <BottomNavigationAction value="calendar" onClick={() => navigate("toBuy")} icon={<PieChart />} sx={{ backgroundColor: "#fff" }} />
       </BottomNavigation>
       <Popper id={id} open={open} anchorEl={anchorEl}>
         <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
-        Adicionar Saída
+        
+        <Link href="AddOutings">Adicionar Saída</Link>
         <br /><hr />
-        Planejamento
+        <Link href="Planning">Planejamento</Link>
+       
         </Box>
       </Popper>
     </Paper>

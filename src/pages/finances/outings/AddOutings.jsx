@@ -122,7 +122,7 @@ function AddOutings() {
                     >
                         <MenuItem value={0}> Essenciais </MenuItem>
                         <MenuItem value={1}> Lazer </MenuItem>
-                        <MenuItem value={1}> Alimentação </MenuItem>
+                        <MenuItem value={2}> Alimentação </MenuItem>
                     </Select>  
                     </FormControl>
                 </Category>

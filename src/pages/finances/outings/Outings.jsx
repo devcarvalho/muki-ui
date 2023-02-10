@@ -1,9 +1,8 @@
 import {useState} from "react";
 import { Typography, Box, IconButton, Button, styled } from "@mui/material";
 import {ReactComponent as CreditCard} from '../../../assets/icons/credit-card.svg';
-import {ReactComponent as Search} from '../../../assets/icons/search.svg';
-import {ReactComponent as Calendar} from '../../../assets/icons/calendar.svg';
 import fruit from '../../../assets/icons/fruit.png';
+import AddIcon from '@mui/icons-material/Add';
 
 function Outings() {
 
@@ -122,11 +121,9 @@ function Outings() {
     </Wallet>
     <Heading>
       <Typography variant="h1">Todas as Saídas</Typography>
-      <IconButton sx={{ background: "#F7F7F7", height: "48px", width: "48px", marginLeft: "auto" }}>
-        <Search/>
-      </IconButton>
-      <IconButton sx={{ background: "#F7F7F7", height: "48px", width: "48px" }}>
-        <Calendar/>
+      <IconButton sx={{ background: "#F7F7F7", height: "48px", width: "48px", marginLeft: "auto" }}
+       href="addOutings">
+        <AddIcon sx={{color: "#000000"}}/>
       </IconButton>
     </Heading>
     <Pills>
